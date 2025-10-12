@@ -181,13 +181,28 @@ header {
     font-size: 0.8rem;
 }
 
+.names-container {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--main-color);
+    display: none;
+    justify-content: center;
+}
+
 /* DAYS DISPLAY */
 
 .days-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+.names-container.active,
+.days-container.active {
+    display: flex;
 }
 
 .days,
