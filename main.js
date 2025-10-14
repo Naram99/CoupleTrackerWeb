@@ -41,9 +41,12 @@ submitBtn.addEventListener("click", () => {
 
     const date = getUTCFromDate(new Date(setDate));
 
+    const you = document.querySelector("#yourname").value;
+    const partner = document.querySelector("#partnername").value
+
     const data = {
-        yourname: document.querySelector("#yourname").value,
-        partnername: document.querySelector("#partnername").value,
+        yourname: you === "" ? "❤️" : you,
+        partnername: partner === "" ? "❤️" : partner,
         date: date.getTime(),
     };
 
