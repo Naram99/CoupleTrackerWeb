@@ -243,3 +243,9 @@ footer {
         flex-direction: column-reverse;
     }
 }
+
+@media (max-width: 400px) {
+    .nav-wrapper a {
+        text-align: right;
+    }
+}
